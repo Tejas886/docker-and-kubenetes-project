@@ -34,14 +34,10 @@ jobs:
         uses: azure/setup-kubectl@v3 
 
 
-      - name: kubeconfig 
-        run: |
-          mkdir -p $HOME/.kube 
-          echo "${{ secrets.KUBECONFIG }}" > $HOME/.kube/config
-          chmod 600 $HOME/.kube/config
+      - name: Start minikube
+        uses: medyagh/setup-minikube@master
 
-
-      - name: verify the cluster 
+      - name: verify the cluster
         run: kubectl get nodes
      
 
