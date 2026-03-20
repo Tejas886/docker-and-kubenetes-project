@@ -42,7 +42,7 @@ jobs:
      
 
       - name: deployment of kubenetes 
-        run: kubectl apply -f ./src/ deployment.yml
+        run: kubectl apply -f ./src/deployment.yml
          
       - name: checking the pods 
         run: kubectl get pods
