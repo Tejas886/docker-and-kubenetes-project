@@ -26,9 +26,9 @@ jobs:
           context: ./src  #from current 
           push: true
           tags: |
-            tejasgowramma12/image1:latest
-            tejasgowramma12/image1:${{ github.sha }}
-            tejasgowramma12/image1:${{ github.run_number }} 
+            tejasgowramma123/image1:latest
+            tejasgowramma123/image1:${{ github.sha }}
+            tejasgowramma123/image1:${{ github.run_number }} 
            
       - name: installing of kubenetes
         uses: azure/setup-kubectl@v3 
