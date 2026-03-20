@@ -3,7 +3,7 @@ name: deployment of k8s and docker
 on:
   push:
     branches:
-      - master 
+      - main 
 
 jobs:
   build:
