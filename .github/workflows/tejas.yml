@@ -23,7 +23,7 @@ jobs:
       - name: building a docker image
         uses: docker/build-push-action@v3
         with:
-          context: . #from current 
+          context: ./src  #from current 
           push: true
           tags: |
             tejasgowramma12/image1:latest
