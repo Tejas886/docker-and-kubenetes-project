@@ -1,4 +1,4 @@
-name: deployment of k8s and docker 
+name: deployment of k8s and docker #giving a name 
 
 on:
   push:
