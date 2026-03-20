@@ -3,7 +3,7 @@ name: deployment of k8s and docker #giving a name
 on:
   push:
     branches:
-      - main 
+      - master 
 
 jobs:
   build:
@@ -42,7 +42,7 @@ jobs:
      
 
       - name: deployment of kubenetes 
-        run: kubectl apply -f deployment.yml
+        run: kubectl apply -f ./src deployment.yml
          
       - name: checking the pods 
         run: kubectl get pods
